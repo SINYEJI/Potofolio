@@ -6,17 +6,27 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>신예지 포트폴리오</title>
 
+
     <!-- 팬시박스 css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- animate.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link href="css/main.css" rel="stylesheet" />
 
     <!--jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- 팬시박스 js -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
    <script>
         $(function(){
             //탭메뉴
@@ -27,6 +37,7 @@
                 $('.motion .list_cont').removeClass('on')
                 $('.motion .list_cont').eq($(this).index()).addClass('on');
             });//click end
+            AOS.init();
         });
     </script>
 
@@ -45,234 +56,31 @@
             <img src="https://via.placeholder.com/1920x1000/333/333/?text=image" />
         </figure>
         <div class="title">
+            <div class="animate__animated animate__rubberBand">
             <h2>MOTION GRAPHIC DESINGER</h2>
             <p>SIN YE JI</p>
-            <a href="#">유튜브채널</a>
+            <a href="https://www.youtube.com/channel/UCaWFHu223J0T68LEPEUinQQ">유튜브채널</a>
+        </div>
         </div><!-- .title end -->
     </section><!-- .main_visual end -->
 
-    <section class="best_v">
-        <div class="title">
-            <h3>BEST VIDEO EDITING</h3>
-            <p>내가 뽑은 베스트 작품</p>
-        </div><!-- .title end -->
-        <div class="cont">
-            <div class="youtube">
-                <div class="youtube_in">
-                    <!-- 유튜브 연결 -->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FSkKZUkx7Vw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div><!-- .youtube_in end -->
-            </div><!-- .youtube. end -->
-            <div class="info">
-                <strong>#브이로그</strong>
-                <h4>영상제목넣기</h4>
-                <p>편집, 촬영, 연출, 디자인, 특수효과 / 카피한거면 모작문구 작성 </p>
-                <p>제작목적, 콘셉트 작성</p>
-                <dl>
-                    <dt>프로그램</dt>
-                    <dd>프로그램 이름 작성 Maya 2020 & Adobe Premiere Pro</dd>
-                </dl>
-                <dl>
-                    <dt>배경음악</dt>
-                    <dd>Hazy - Asher Fulero</dd>
-                </dl>
-                <dl>
-                    <dt>러닝타임</dt>
-                    <dd>00:17:00</dd>
-                </dl>
-                <ul>
-                    <li>
-                        <a href="#" target="_blank">유튜브이동하기</a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">기획서보기</a>
-                    </li>
-            </div><!-- .info end -->
-        </div><!-- .cont end -->
-    </section><!-- .best_v end -->
-
-
-    <section class="motion">
-        <div class="title">
-            <h3>MOTION GRAPHIC</h3>
-            <p>비디오, 애니메이션 기술을 이용한 영상제작</p>
-        </div><!-- .title end -->
-        <ul class="list">
-            <li class="on">3D</li>
-            <li>VLOG</li>
-            <li>모션그래픽</li>
-            <li>사운드디자인</li>
-            <li>특수영상합성</li>
-        </ul><!-- .list end -->
-        <div class="motion_cont">
-            <div class="list_cont on"><!-- 게임 -->
-                <div class="items">
-                    <div class="youtube">
-                        <div class="youtube_in">
-                            <!-- 유튜브연결 -->
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/FSkKZUkx7Vw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div><!-- .youtube_in end -->
-                    </div><!-- .youtube end -->
-                    <div class="info">
-                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
-                        <h4>연령고지</h4>
-                        <dl>
-                            <dt>Software</dt>
-                            <dd>Maya 2020 & Adobe Premiere Pro</dd>
-                        </dl>
-                        <dl>
-                            <dt>러닝타임</dt>
-                            <dd>00:17:00</dd>
-                        </dl>
-                        <dl>
-                            <dt>BG sound</dt>
-                            <dd>Lukewarm Hazy - Asher Fulero</dd>
-                        </dl>
-                        <dl>
-                            <dt>URL주소</dt>
-                            <dd>
-                                <a href="https://youtu.be/FSkKZUkx7Vw">영상보기</a></dd>
-                        </dl>
-                    </div><!-- info end -->
-                </div><!-- .item end 1   -->
-                <div class="items">
-                    <div class="youtube">
-                        <div class="youtube_in">
-                            <!-- 유튜브연결 -->
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/FSkKZUkx7Vw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div><!-- .youtube_in end -->
-                    </div><!-- .youtube end -->
-                    <div class="info">
-                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
-                        <h4>연령고지</h4>
-                        <dl>
-                            <dt>Software</dt>
-                            <dd>Maya 2020 & Adobe Premiere Pro</dd>
-                        </dl>
-                        <dl>
-                            <dt>러닝타임</dt>
-                            <dd>00:17:00</dd>
-                        </dl>
-                        <dl>
-                            <dt>BG sound</dt>
-                            <dd>Lukewarm Hazy - Asher Fulero</dd>
-                        </dl>
-                        <dl>
-                            <dt>URL주소</dt>
-                            <dd>
-                                <a href="https://youtu.be/FSkKZUkx7Vw">영상보기</a></dd>
-                        </dl>
-                    </div><!-- info end -->
-                </div><!-- .item end 2   -->
-            </div><!-- .list_cont end 게임-->
-
-            <div class="list_cont"><!-- 홍보영상 -->
-                <div class="items">
-                    <div class="youtube">
-                        <div class="youtube_in">
-                            <!-- 유튜브연결 -->
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/-VnFYZLqjJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div><!-- .youtube_in end -->
-                    </div><!-- .youtube end -->
-                    <div class="info">
-                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
-                        <h4>VLOG</h4>
-                        <dl>
-                            <dt>Software</dt>
-                            <dd>Adobe Premiere Pro</dd>
-                        </dl>
-                        <dl>
-                            <dt>러닝타임</dt>
-                            <dd>01:39:00</dd>
-                        </dl>
-                        <dl>
-                            <dt>BG sound</dt>
-                            <dd>Love is</dd>
-                        </dl>
-                        <dl>
-                            <dt>URL주소</dt>
-                            <dd>
-                                <a href="https://youtu.be/-VnFYZLqjJU">영상보기</a></dd>
-                        </dl>
-                    </div><!-- info end -->
-                </div><!-- .item end 2   -->
-                <div class="items">
-                    <div class="youtube">
-                        <div class="youtube_in">
-                            <!-- 유튜브연결 -->
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/-VnFYZLqjJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div><!-- .youtube_in end -->
-                    </div><!-- .youtube end -->
-                    <div class="info">
-                        <p>각본, 연출, 촬영, 편집, 보정, 특수효과</p>
-                        <h4>VLOG</h4>
-                        <dl>
-                            <dt>Software</dt>
-                            <dd>Adobe Premiere Pro</dd>
-                        </dl>
-                        <dl>
-                            <dt>러닝타임</dt>
-                            <dd>01:39:00</dd>
-                        </dl>
-                        <dl>
-                            <dt>BG sound</dt>
-                            <dd>Love is</dd>
-                        </dl>
-                        <dl>
-                            <dt>URL주소</dt>
-                            <dd>
-                                <a href="https://youtu.be/-VnFYZLqjJU">영상보기</a></dd>
-                        </dl>
-                    </div><!-- info end -->
-                </div><!-- .item end 2   -->
-            </div><!-- .list_cont end 홍보영상-->
-        </div><!-- .motion_cont end -->
-    </section><!-- .motion end -->
-
-    <section class="g_ver05">
-        <div class="title">
-            <h3>GRAPHIC DESIGN</h3>
-            <p>디자인프로그램을 사용하여 만든 그래픽 디자인</p>
-            <em>클릭하시면 원본이미지를 보실 수 있습니다.</em>
-        </div><!-- .title end -->
-        <div class="cont">
-            <a class="items" href="https://via.placeholder.com/300x500" data-fancybox="image">
-                <figure>
-                    <img src="https://via.placeholder.com/300x500/333/?text=image" alt="" />
-                </figure>
-                <div class="info">
-                    <p>#보정 / 포토샵</p>
-                    <h4>제작된 이미지 제목</h4>
-                </div><!-- .info end -->
-            </a><!-- .items end 1 -->
-
-            <a class="items" href="https://via.placeholder.com/300x500" data-fancybox="image">
-                <figure>
-                    <img src="https://via.placeholder.com/300x500/333/?text=image" alt="" />
-                </figure>
-                <div class="info">
-                    <p>#보정 / 포토샵</p>
-                    <h4>제작된 이미지 제목</h4>
-                </div><!-- .info end -->
-            </a><!-- .items end 2 -->
-
-        </div><!-- .cont end -->
-
-    </section><!-- .g_ver05 end -->
-    
     <section class="about">
         <div class="cont">
             <figure>
-                <img src="https://via.placeholder.com/450x500/?text=image" alt="" />
+                <img src="images/프로필.png" alt="" />
             </figure>
 
             <div class="info">
+
+
                 <div>
                     <h4>PROFILE</h4>
-                    <p>신예지 l SIN YE JI</p>
-                    <p>2000.07.03</p>
-                    <p><a href="tel:010-2685-6905">010.2685.6905</a></p>
-                    <p>창원시 마산회원구</p>
+                    <dl>
+                        <dt>신예지 l SIN YE JI</dt>
+                        <dd>2000.07.03</dd>
+                        <dd><a href="tel:010-2685-6905">010.2685.6905</a></dd>
+                        <dd>창원시 마산회원구</dd>
+                    </dl>
                 </div>
 
                 <div>
@@ -303,11 +111,339 @@
         </div><!-- .cont end   -->
     </section><!-- .about end -->
 
+    <section class="g_ver02">
+        <div class="title">
+            <H3>GRAPHIC DESIGN</H3>
+            <P>디자인 프로그램을 사용하여 만든 그래픽디자인 입니다.</P>
+            <EM>클릭하시면 원본이미지를 보실 수 있습니다.</EM>
+        </div> <!-- .title end -->
+        
+        <div class="cont">
+            <!-- 팬시박스3 -->
+            <a class="items" href="images/음식레시피_재료소개.png" data-fancybox="images">
+                <figure>
+                    <img src="images/음식레시피_재료소개.png" alt="레시피" />
+                </figure>
+                <div class="info">
+                    <p>Food l Illustrater</p>
+                    <h4>타코야끼</h4>
+                </div><!-- .info end -->
+            </a><!-- .items end 1 -->
+            <a class="items" href="images/음식레시피_재료소개.png" data-fancybox="images">
+                <figure>
+                    <img src="images/음식레시피_재료소개.png" alt="레시피" />
+                </figure>
+                <div class="info">
+                    <p>Food l Illustrater</p>
+                    <h4>타코야끼</h4>
+                </div><!-- .info end -->
+            </a><!-- .items end 2 -->
+            <a class="items" href="images/프로필.png" data-fancybox="images">
+                <figure>
+                    <img src="images/프로필.png" alt="프로필" />
+                </figure>
+                <div class="info">
+                    <p>Youtube l Illustrater</p>
+                    <h4>프로필</h4>
+                </div><!-- .info end -->
+            </a><!-- .items end 3 -->
+            <a class="items" href="images/프로필.png" data-fancybox="images">
+                <figure>
+                    <img src="images/프로필.png" alt="프로필" />
+                </figure>
+                <div class="info">
+                    <p>Youtube l Illustrater</p>
+                    <h4>배경화면</h4>
+                </div><!-- .info end -->
+            </a><!-- .items end 4 -->
+
+        </div><!-- .cont end -->
+    </section><!-- .g_ver02 end -->
+
+
+    <section class="best_v">
+        <div class="title">
+            <h3>BEST VIDEO EDITING</h3>
+            <p>내가 뽑은 베스트 작품</p>
+        </div><!-- .title end -->
+        <div class="cont">
+            <div class="youtube" data-aos="fade-left">
+                <div class="youtube_in">
+                    <!-- 유튜브 연결 -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FSkKZUkx7Vw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div><!-- .youtube_in end -->
+            </div><!-- .youtube. end -->
+            <div class="info" data-aos="fade-right">
+                <strong>#Newtro #Record #Jazz #Old</strong>
+                <h4>연령고지</h4>
+                <p>3D Modeling l Light l Camera l Rendering</p>
+                <p>재즈풍 BGM을 추가한 올드한 분위기의 연령 고지 영상</p>
+                <dl>
+                    <dt>Software</dt>
+                    <dd>Maya 2020 & Adobe Premiere Pro</dd>
+                </dl>
+                <dl>
+                    <dt>BG Sound</dt>
+                    <dd>Hazy - Asher Fulero</dd>
+                </dl>
+                <dl>
+                    <dt>Running Time</dt>
+                    <dd> 00:17:00</dd>
+                </dl>
+                <ul>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCaWFHu223J0T68LEPEUinQQ" target="_blank">유튜브이동하기</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">기획서보기</a>
+                    </li>
+            </div><!-- .info end -->
+        </div><!-- .cont end -->
+    </section><!-- .best_v end -->
+
+
+    <section class="motion">
+        <div class="title">
+            <h3>MOTION GRAPHIC</h3>
+            <p>비디오, 애니메이션 기술을 이용한 영상제작</p>
+        </div><!-- .title end -->
+        <ul class="list">
+            <li class="on">3D</li>
+            <li>VLOG</li>
+            <li>모션그래픽</li>
+            <li>타이틀시퀀스</li>
+            <li>사운드디자인</li>
+            <li>특수영상합성</li>
+        </ul><!-- .list end -->
+        <div class="motion_cont">
+            <div class="list_cont on"><!-- 3D -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/FSkKZUkx7Vw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>Newtro l Record l Jazz l Old</p>
+                        <h4>연령고지</h4>
+                        <dl>
+                            <dt>Software</dt>
+                            <dd>Maya 2020 & Adobe Premiere Pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>BG Sound</dt>
+                            <dd>Lukewarm Hazy - Asher Fulero</dd>
+                        </dl>
+                        <dl>
+                            <dt>Running Time</dt>
+                            <dd>00:17:00</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL</dt>
+                            <dd>
+                                <a href="https://youtu.be/FSkKZUkx7Vw">영상보기</a></dd>
+                        </dl>
+                    </div><!-- info end -->
+                </div><!-- .item end 1   -->
+            </div><!-- .list_cont end 3D-->
+
+            <div class="list_cont"><!-- VLOG -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Lpes-TrQSEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>봄 l 따뜻 l 우리 집 l 산책 l 운동</p>
+                        <h4>일상 VLOG</h4>
+                        <dl>
+                            <dt>Software</dt>
+                            <dd>Adobe Premiere Pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>BG Sound</dt>
+                            <dd>Memory Of Spring </dd>
+                        </dl>
+                        <dl>
+                            <dt>Running Time</dt>
+                            <dd>02:01:00</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL</dt>
+                            <dd>
+                                <a href="https://www.youtube.com/watch?v=Lpes-TrQSEQ">영상보기</a></dd>
+                        </dl>
+                    </div><!-- info end -->
+                </div><!-- .item end 2   -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LGC7CaGl7JI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>경산 l 남매공원 l 소담길 l 삼성현역사문화공원</p>
+                        <h4>경산 VLOG</h4>
+                        <dl>
+                            <dt>Software</dt>
+                            <dd>Adobe Premiere Pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>BG Sound</dt>
+                            <dd>둘레길 산책</dd>
+                        </dl>
+                        <dl>
+                            <dt>Running Time</dt>
+                            <dd>01:32:00</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL</dt>
+                            <dd>
+                                <a href="https://www.youtube.com/watch?v=LGC7CaGl7JI">영상보기</a></dd>
+                        </dl>
+                    </div><!-- info end -->
+                </div><!-- .item end 2   -->
+            </div><!-- .list_cont end VLOG-->
+
+            <div class="list_cont"><!-- 모션그래픽 -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/bDyITg644H0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>음식 l 홈메이킹 l 간식 l 문어 </p>
+                        <h4>타코야끼 레시피</h4>
+                        <dl>
+                            <dt>Software</dt>
+                            <dd>Adobe Illustrator & Adobe After Effects & Adobe Premiere Pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>BG Sound</dt>
+                            <dd>Happy Family</dd>
+                        </dl>
+                        <dl>
+                            <dt>Running Time</dt>
+                            <dd>00:45:00</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL</dt>
+                            <dd>
+                                <a href="https://www.youtube.com/watch?v=bDyITg644H0">영상보기</a></dd>
+                        </dl>
+                    </div><!-- info end -->
+                </div><!-- .item end 3   -->
+            </div><!-- .list_cont end 모션그래픽-->
+
+            <div class="list_cont"><!-- 타이틀시퀀스 -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/_0ZDaRb6k18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>드라마 l 다큐 l 청춘 l 로맨스</p>
+                        <h4>그해우리는</h4>
+                        <dl>
+                            <dt>Software</dt>
+                            <dd>Adobe Photoshop & Adobe Illustrator & Adobe After Effects</dd>
+                        </dl>
+                        <dl>
+                            <dt>BG Sound</dt>
+                            <dd>이혜린_첫번째걸음</dd>
+                        </dl>
+                        <dl>
+                            <dt>Running Time</dt>
+                            <dd>00:22:00</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL</dt>
+                            <dd>
+                                <a href="https://www.youtube.com/watch?v=_0ZDaRb6k18">영상보기</a></dd>
+                        </dl>
+                    </div><!-- info end -->
+                </div><!-- .item end 4   -->
+            </div><!-- .list_cont end 타이틀시퀀스-->
+
+            <div class="list_cont"><!-- 사운드디자인 -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/IcQCcjeUlfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>키보드 l 저소음 l 적축 l 체리</p>
+                        <h4>웨이코스 씽크웨이 토체프 D&T 콜라보 체리 키보드</h4>
+                        <dl>
+                            <dt>Software</dt>
+                            <dd>Adobe Premiere Pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>BG Sound</dt>
+                            <dd>Jeff Kalee_Pillow Talk</dd>
+                        </dl>
+                        <dl>
+                            <dt>Running Time</dt>
+                            <dd>01:18:00</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL</dt>
+                            <dd>
+                                <a href="https://www.youtube.com/watch?v=IcQCcjeUlfo">영상보기</a></dd>
+                        </dl>
+                    </div><!-- info end -->
+                </div><!-- .item end 5   -->
+            </div><!-- .list_cont end 사운드디자인-->
+
+            <div class="list_cont"><!-- 특수영상합성 -->
+                <div class="items">
+                    <div class="youtube">
+                        <div class="youtube_in">
+                            <!-- 유튜브연결 -->
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/gjvNBrFDhxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div><!-- .youtube_in end -->
+                    </div><!-- .youtube end -->
+                    <div class="info">
+                        <p>어플 l 런닝 l 워킹 l 타이머</p>
+                        <h4>RUNDAY</h4>
+                        <dl>
+                            <dt>Software</dt>
+                            <dd>Adobe After Effects & Adobe Premiere Pro</dd>
+                        </dl>
+                        <dl>
+                            <dt>BG Sound</dt>
+                            <dd>Tobu_Seven</dd>
+                        </dl>
+                        <dl>
+                            <dt>Running Time</dt>
+                            <dd>00:16:00</dd>
+                        </dl>
+                        <dl>
+                            <dt>URL</dt>
+                            <dd>
+                                <a href="https://www.youtube.com/watch?v=gjvNBrFDhxg">영상보기</a></dd>
+                        </dl>
+                    </div><!-- info end -->
+                </div><!-- .item end 6   -->
+            </div><!-- .list_cont end 특수영상합성-->
+        </div><!-- .motion_cont end -->
+    </section><!-- .motion end -->
+
     <footer>
         <h3>신예지 l SINYEJI</h3>
         <ul>
-            <li><a href="#">유튜브채널</a></li>
-            <li><a href="#">010.2685.6905</a></li>
+            <li><a href="https://www.youtube.com/channel/UCaWFHu223J0T68LEPEUinQQ">유튜브채널</a></li>
+            <li><a href="tel:010-2685-6905">010.2685.6905</a></li>
             <li>Kakao ID : yzxiee</li>
             <li>Email : s0000703@naver.com</li>
         </ul>
